@@ -36,7 +36,7 @@ Add #app id of div in index.html
 ### app.js
 You write code in app.js
 App.js is main file for it.
-####Example of app.js
+#### Example of app.js
 ```javascript
 animation.config({
   fade: `css and html`
