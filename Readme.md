@@ -69,5 +69,8 @@ animation.config({
 
 
 ```
-## onClick to open Activity 
+## onClick  to open Activity 
 see onClick open page documention
+[See Doc Example](https://carbonnativev22.netlify.app/?route=main)
+## Router Activity
+[See Router Example](https://carbonnativev22.netlify.app/?route=main)
