@@ -1,0 +1,19 @@
+[
+  {
+    "activityName":"<MainActivity>",
+    "activitySrc":"app.js"
+  },
+  {
+  "activityName": "<HomeActivity>",
+  "activitySrc": "home.js"
+},
+{
+  "activityName": "<AboutActivity>",
+  "activitySrc": "about.js"
+},
+{
+  "activityName": "<ExampleActivity>",
+  "activitySrc": "example.js"
+}
+  
+]

@@ -1,0 +1,68 @@
+
+function OnStart()
+{
+    lay = app.CreateLayout( "linear", "VCenter,FillXY" );
+
+     web = app.CreateWebView(1,1);
+     web.SetBackColor( "#ffffff" );
+     lay.AddChild( web );
+
+     app.AddLayout( lay );
+     /*read all js*/
+     //react js
+     reactJs=app.ReadFile("engine/react/react-dom.development.js")
+     reactDomJs=app.ReadFile("engine/react/react.development.js")
+     bubbleJs=app.ReadFile("engine/react/babel.min.js")
+     /*uive*/
+     routerJs=app.ReadFile("engine/UIVE/router.js")
+     skeletonJs=app.ReadFile("engine/UIVE/skeleton.js")
+     /*style*/
+     beerCss=app.ReadFile("engine/css/beer.min.css")
+     beerJs=app.ReadFile("engine/css/beer.min.js")
+     /*app.js*/
+     appJs=app.ReadFile("engine/view/app.js")
+
+    html=`
+    
+    <div id="root"></div>
+    
+    <!--beer css-->
+  <style>
+    ${beerCss}
+  </style>
+  <!--beer js-->
+  <script type="module">
+    ${beerJs}
+  </script>
+  <!--react cdn-->
+  <script>
+    ${reactJs}
+  </script>
+  <!--react dom-->
+  <script>
+    ${reactDomJs}
+  </script>
+  <!--bubble js-->
+  <script>
+    ${bubbleJs}
+  </script>
+  <!--router js-->
+  <script>
+    ${routerJs}
+  </script>
+  <!--skeleton js-->
+  <script>
+    ${skeletonJs}
+  </script>
+  <!--app js-->
+  <script type="text/babel">
+    ${appJs}
+  </script>
+  
+  
+  
+    
+    `;//end html
+
+     web.LoadHtml( html, "file:///Sys/" );
+}
