@@ -136,9 +136,10 @@ function MainActivity() {
   return (
     <div style={containerStyle}>
       <div style={cardStyle}>
-        <h5>Carbon Native V2.2</h5>
-        <button onClick={() => routeTo("docs", "slide", 1800, "middleCenter")}>Go to Documentation</button>
+        <h5>Carbon Native V2.2 Router Doc</h5>
+        <button onClick={() => routeTo("docs", "slide", 1800, "middleCenter")}>Router Documentation</button>
         <br /><br />
+        <button onClick={() =>window.open("https://github.com/AbdunNur-Porag/Carbon-Native-V2.2-Main")}style={{backgroundColor:"black",fontColor:"white"}}>Go GitHub For Full Doc</button>
         <button onClick={() => routeTo("about", "fade", 1800, "middleCenter")}>Go to About</button>
       </div>
     </div>
@@ -197,9 +198,7 @@ routeTo("main", "fade", 1000, "bottomLeft");`}
 
         <div style={{ textAlign: "center" }}>
           <button onClick={() => routeTo("main", "slide", 1200, "middleCenter")}>Main</button><br /><br />
-          <button onClick={() => routeTo("about", "fade", 1500, "bottomRight")}>About</button><br /><br />
-          <button onClick={() => routeTo("docs", "slide", 1800, "topLeft")}>Docs</button><br /><br />
-          <button onClick={() => routeTo("invalidRoute", "fade", 1200, "middleCenter")}>Error Page</button>
+        <button onClick={() =>window.open("https://github.com/AbdunNur-Porag/Carbon-Native-V2.2-Main")}style={{backgroundColor:"black",fontColor:"white"}}>Go GitHub For Full Doc</button>
         </div>
       </div>
     </div>
@@ -211,7 +210,12 @@ function AboutActivity() {
     <div style={containerStyle}>
       <div style={cardStyle}>
         <h5>About</h5>
+        <div className="padding">
+          This is Made By AbdunNurPorag.
+          Here is only Router Documention.Go Github to see Full Documention
+        </div>
         <button onClick={() => routeTo("main", "slide", 1800, "middleCenter")}>Back to Main</button>
+        <button onClick={() =>window.open("https://github.com/AbdunNur-Porag/Carbon-Native-V2.2-Main")}style={{backgroundColor:"black",fontColor:"white"}}>Go GitHub For Full Doc</button>
       </div>
     </div>
   );
